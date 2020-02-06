@@ -1,0 +1,22 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int a, b, aux;
+
+        System.out.println("Digite o valor de a:");
+        a = entrada.nextInt();
+        System.out.println("Digite o valor de b:");
+        b = entrada.nextInt();
+
+        aux = a;
+        a = b;
+        b = aux;
+
+        System.out.println("valores trocados: \n" + "Novo a: " + a + "\nNovo b: " + b);
+    }
+}
