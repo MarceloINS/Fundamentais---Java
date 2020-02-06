@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        int a, b, cont = 0;
+
+        System.out.println("Quantos valores deseja declarar?");
+        a = entrada.nextInt();
+
+        for(int i = 1; i <= a; i++){
+            System.out.println("Digite o " + i + "º valor:");
+            b = entrada.nextInt();
+
+            if (b >= 50 && b <= 100) {
+                cont++;
+            }
+        }
+        System.out.println("Valores acima de 50: " + cont);
+    }
+}
